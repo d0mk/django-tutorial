@@ -129,3 +129,10 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
+
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBacked'
+EMAIL_FILE_PATH = 'tmp/email-messages/'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBacked'
+# EMAIL_HOST = 'localhost'
+# EMAIL_PORT = 1025
+# EMAIL_USE_TLS = True
